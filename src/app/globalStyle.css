@@ -1,0 +1,96 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     margin: 0;
+     font-family: "Inter", sans-serif;
+     font-size: 1rem;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+     color: inherit;
+     text-decoration: unset;
+
+     &:link,
+     :visited,
+     :hover,
+     :active {
+          color: inherit;
+     }
+}
+
+label {
+     font-size: 16px;
+     font-weight: 400;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+     border: 1px solid #c1c1c1;
+     border-radius: 6px;
+     outline: none;
+     background-color: #ffffff08;
+     padding: 15px;
+     margin: 5px 0px;
+     color: var(--white);
+     transition: background-color 0.2s;
+     resize: none;
+     font-size: 16px;
+
+
+     &:hover {
+          background-color: #ffffff10;
+     }
+
+     &:focus {
+          background-color: #ffffff20;
+     }
+
+     ::placeholder {
+          background: #848484;
+     }
+}
+
+ol,
+ul,
+li {
+     list-style: none;
+}
+
+hr {
+     background-color: #c1c1c1;
+     height: 1px;
+     border: 0;
+}
+
+
+.btn {
+     height: 56px;
+     padding: 10px 20px;
+     display: inline-block;
+     background-color: #000;
+     border-radius: 6px;
+     cursor: pointer;
+     color: white;
+     user-select: none;
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     transition: background-color 0.2s;
+
+     &:hover {
+          background-color: #333;
+     }
+
+     &:active {
+          scale: 0.9;
+          transition: scale 0.1s ease-in;
+     }
+
+}
