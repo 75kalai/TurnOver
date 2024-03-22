@@ -1,16 +1,7 @@
 "use client"
-import React, { useEffect } from 'react'
-// import cookieUtil from '@/helpers/cookieUtil'
+import React from 'react'
 
 export default function page({ children }) {
-
-  useEffect(() => {
-    // let userDetails = cookieUtil.getUserDetails()
-    // if (userDetails.email){
-    //   location.reload()
-    // }
-
-  }, [])
 
   return (
     <>

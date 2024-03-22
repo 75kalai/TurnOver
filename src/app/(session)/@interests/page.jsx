@@ -20,13 +20,12 @@ export default function Interests() {
      const [paginationArr, setPaginationArr] = useState([])
 
      const token = Cookies.get('token')
-     if (!token) {
-          // NO Cookie/TOKEN, user session must be unset
-          setUserData(null)
-          return;
-     }
-
+     
      useEffect(() => {
+          if (!token) {
+               // NO Cookie/TOKEN, user session must be unset
+               setUserData(null)
+          }
           let pageNum = parseInt(searchParams.get("page"))
           pageNum = (isNaN(pageNum)) || (typeof pageNum != "number") ? 1 : pageNum;
 
@@ -105,10 +104,6 @@ export default function Interests() {
           result.push(n + 2)
 
           return result
-     }
-
-     function getLastPageNum(){
-          
      }
 
      return (
