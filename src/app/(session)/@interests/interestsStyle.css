@@ -59,6 +59,11 @@
           gap: 10px;
           color: #ACACAC;
 
+          &>.page{
+               user-select: none;
+               cursor: pointer;
+          }
+
           &>.current-page{
                font-weight: 500;
                color: #000;

@@ -35,6 +35,12 @@
           flex-direction: column;
      }
 
+     &>.error-message{
+          text-align: center;
+          color: rgb(223, 0, 0);
+          font-weight: 500;
+     }
+
      &>.create-account-btn{}
 
      &>.has-account{
